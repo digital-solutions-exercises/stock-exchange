@@ -1,16 +1,13 @@
 # stock-exchange
 
-## Add Submodules to the Parent Repository
+## Cloning Repositories with Submodules
 ```bash
-git submodule add https://github.com/username/submodule-repo.git ./submodules/submodule-repo
+git clone --recurse-submodules git@github.com:digital-solutions-exercises/stock-exchange.git
 ```
 
-## Working with Submodules
+## Add Submodules to the Parent Repository
 ```bash
-git clone git@github.com:digital-solutions-exercises/stock-exchange.git
-cd stock-exchange
-git submodule init
-git submodule update
+git submodule add git@github.com:digital-solutions-exercises/submodule-repo-api.git ./submodules/submodule-repo
 ```
 
 ## Updating Submodules
@@ -40,9 +37,4 @@ rm -rf ./submodules/submodule-repo
 git add .gitmodules
 git commit -m "Removed submodule"
 git push origin main
-```
-
-## Cloning Repositories with Submodules
-```bash
-git clone --recurse-submodules https://github.com/username/your-parent-repo.git
 ```
