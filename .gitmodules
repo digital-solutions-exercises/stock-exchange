@@ -1,0 +1,3 @@
+[submodule "submodules/stock-exchange-ui"]
+	path = submodules/stock-exchange-ui
+	url = https://github.com/digital-solutions-exercises/stock-exchange-ui
