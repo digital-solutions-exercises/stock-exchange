@@ -1,5 +1,15 @@
 # stock-exchange
 
+## How to run the application?
+
+1. Run the services (create images for stock-exchange-api and stock-exchange-ui) using docker compose
+
+```bash
+$ docker-compose up
+```
+
+2. Access http://localhost:3000/
+
 ## Cloning Repositories with Submodules
 ```bash
 git clone --recurse-submodules git@github.com:digital-solutions-exercises/stock-exchange.git

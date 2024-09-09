@@ -1,0 +1,30 @@
+version: '3'
+services:
+  stock-exchange-api:
+    build:
+      context: ./submodules/stock-exchange-api
+      dockerfile: Dockerfile
+    ports:
+      - '4002:4002'
+    env_file: 
+      - ./stock-exchange-api/submodules/.env
+    environment:
+      NODE_ENV: development
+      # MAILER_SERVICE_GRPC_HOST: mailer:4001
+    networks:
+      - my-network
+
+  stock-exchange-ui:
+    build:
+      context: ./submodules/stock-exchange-ui
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    environment:
+      NODE_ENV: development
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
