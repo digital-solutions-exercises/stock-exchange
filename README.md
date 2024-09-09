@@ -38,18 +38,19 @@ Hello, my name is Rastislav Chribik, and this is my self-presentational portfoli
 
 ## How to run the application?
 
-1. Run the services (create images for stock-exchange-api and stock-exchange-ui) using docker compose
+1. Clone Repositories with Submodules
+
+```bash
+git clone --recurse-submodules git@github.com:digital-solutions-exercises/stock-exchange.git
+```
+
+2. Run the services (create images for stock-exchange-api and stock-exchange-ui) using docker compose
 
 ```bash
 $ docker-compose up
 ```
 
-2. Access http://localhost:3000/
-
-## Cloning Repositories with Submodules
-```bash
-git clone --recurse-submodules git@github.com:digital-solutions-exercises/stock-exchange.git
-```
+3. Access http://localhost:3000/
 
 ## Add Submodules to the Parent Repository
 ```bash
