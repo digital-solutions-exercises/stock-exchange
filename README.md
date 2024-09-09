@@ -1,5 +1,41 @@
 # stock-exchange
 
+Hello, my name is Rastislav Chribik, and this is my self-presentational portfolio. In this space, I aim to showcase my coding skills through a simple stock application, which is composed of two core services: a user interface (UI) and an API.
+
+## UI
+- React application
+- tailwind CSS framework
+- typescript
+- i18next for translations
+- multiple components (chart)
+- connection with API
+- router to dynamically handle pages
+- context, state
+- very good test coverage (npm run test)
+- linting (ESlint, prettier) configured (npm run lint-fix)
+- Dockerfile
+
+## API
+- NestJS application
+- typescript
+- fetch stock data from Yahoo Finance
+- request schema validation
+- unit tests 100% coverage (npm run test)
+- e2e tests coverage (npm run test:e2e)
+- linting (ESlint, prettier) configured (npm run lint-fix)
+- Dockerfile
+
+## Stock Exchange
+- docker compose
+
+## What I would like to include next:
+1. graphQL
+    - create graphQL service
+2. gRPC
+    - create RPC methods that will be used by graphQL service to get data from Yahoo
+3. graphQL connection
+    - use graphQL to query the data for UI
+
 ## How to run the application?
 
 1. Run the services (create images for stock-exchange-api and stock-exchange-ui) using docker compose

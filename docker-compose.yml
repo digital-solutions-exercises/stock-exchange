@@ -6,11 +6,10 @@ services:
       dockerfile: Dockerfile
     ports:
       - '4002:4002'
-    env_file: 
-      - ./stock-exchange-api/submodules/.env
+    # env_file: 
+    #   - ./stock-exchange-api/submodules/.env
     environment:
       NODE_ENV: development
-      # MAILER_SERVICE_GRPC_HOST: mailer:4001
     networks:
       - my-network
 
