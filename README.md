@@ -9,6 +9,7 @@ Hello, my name is Rastislav Chribik, and this is my self-presentational portfoli
 - i18next for translations
 - multiple components (chart)
 - connection with API
+- graphQL query to fetch stock history data from Yahoo Finance (it is stored to localstore to avoid calling API multiple times when page is reloaded)
 - router to dynamically handle pages
 - context, state
 - very good test coverage (npm run test)
@@ -18,7 +19,8 @@ Hello, my name is Rastislav Chribik, and this is my self-presentational portfoli
 ## API
 - NestJS application
 - typescript
-- fetch stock data from Yahoo Finance
+- API endpoints to fetch stock data from Yahoo Finance
+- graphQL resolver to fetch stock history data from Yahoo Finance
 - request schema validation
 - unit tests 100% coverage (npm run test)
 - e2e tests coverage (npm run test:e2e)
@@ -29,12 +31,10 @@ Hello, my name is Rastislav Chribik, and this is my self-presentational portfoli
 - docker compose
 
 ## What I would like to include next:
-1. graphQL
-    - create graphQL service
+1. separate API to graphQL and API service
+    - split API into two autonomous services to support microservices structure 
 2. gRPC
-    - create RPC methods that will be used by graphQL service to get data from Yahoo
-3. graphQL connection
-    - use graphQL to query the data for UI
+    - switch API controllers to RPC methods that will be used by graphQL service to get data from Yahoo
 
 ## How to run the application?
 
