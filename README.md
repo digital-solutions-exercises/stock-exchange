@@ -2,6 +2,12 @@
 
 Hello, my name is Rastislav Chribik, and this is my self-presentational portfolio. In this space, I aim to showcase my coding skills through a simple stock application, which is composed of two core services: a user interface (UI) and an API.
 
+This project is a microservices-based application that provides financial graphs where users can view historical data, company information, a blog section, and a contact form. The front-end is built using React, and the back-end is developed with NestJS (Node.js). The app is fully covered by both unit and end-to-end tests, with communication between the front-end and back-end via both API endpoints and GraphQL. Everything runs in a Docker environment.
+
+## Business Logic
+
+![Stock Exchange App](./assets/images/Stock-Exchange.png)
+
 ## UI
 - React application
 - tailwind CSS framework
@@ -31,10 +37,10 @@ Hello, my name is Rastislav Chribik, and this is my self-presentational portfoli
 - docker compose
 
 ## What I would like to include next:
-1. separate API to graphQL and API service
-    - split API into two autonomous services to support microservices structure 
-2. gRPC
-    - switch API controllers to RPC methods that will be used by graphQL service to get data from Yahoo
+1. update contact form to send an Email
+- create gRPC email server
+- connect gRPC email server with API
+- call API to send an Email
 
 ## How to run the application?
 
